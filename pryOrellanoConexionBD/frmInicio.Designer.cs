@@ -59,6 +59,7 @@
             this.Controls.Add(this.dgvMostrar);
             this.Name = "frmInicio";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).EndInit();
             this.ResumeLayout(false);
 

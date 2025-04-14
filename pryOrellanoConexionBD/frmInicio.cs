@@ -16,5 +16,11 @@ namespace pryOrellanoConexionBD
         {
             InitializeComponent();
         }
+
+        clsConexion conexion = new clsConexion();
+        private void frmInicio_Load(object sender, EventArgs e)
+        {
+            conexion.MostrarDatos(dgvMostrar);
+        }
     }
 }
