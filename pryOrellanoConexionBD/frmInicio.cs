@@ -22,5 +22,6 @@ namespace pryOrellanoConexionBD
         {
             conexion.MostrarDatos(dgvMostrar);
         }
+
     }
 }
