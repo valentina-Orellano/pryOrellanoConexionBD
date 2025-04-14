@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvMostrar = new System.Windows.Forms.DataGridView();
-            this.btnMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,21 +40,11 @@
             this.dgvMostrar.Size = new System.Drawing.Size(776, 317);
             this.dgvMostrar.TabIndex = 0;
             // 
-            // btnMostrar
-            // 
-            this.btnMostrar.Location = new System.Drawing.Point(12, 372);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(75, 23);
-            this.btnMostrar.TabIndex = 1;
-            this.btnMostrar.Text = "Mostrar";
-            this.btnMostrar.UseVisualStyleBackColor = true;
-            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.dgvMostrar);
             this.Name = "frmInicio";
             this.Text = "Inicio";
@@ -68,7 +57,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvMostrar;
-        private System.Windows.Forms.Button btnMostrar;
     }
 }
 
