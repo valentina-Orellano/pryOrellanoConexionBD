@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.dgvMostrar = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCompletar = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblDescrip = new System.Windows.Forms.Label();
@@ -58,15 +58,15 @@
             this.dgvMostrar.Size = new System.Drawing.Size(914, 287);
             this.dgvMostrar.TabIndex = 0;
             // 
-            // label1
+            // lblCompletar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(262, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(430, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Complete todos los campos para agregar un producto";
+            this.lblCompletar.AutoSize = true;
+            this.lblCompletar.Font = new System.Drawing.Font("Rockwell", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompletar.Location = new System.Drawing.Point(262, 9);
+            this.lblCompletar.Name = "lblCompletar";
+            this.lblCompletar.Size = new System.Drawing.Size(430, 20);
+            this.lblCompletar.TabIndex = 1;
+            this.lblCompletar.Text = "Complete todos los campos para agregar un producto";
             // 
             // lblCodigo
             // 
@@ -169,7 +169,6 @@
             this.cmbCat.Name = "cmbCat";
             this.cmbCat.Size = new System.Drawing.Size(157, 24);
             this.cmbCat.TabIndex = 13;
-       
             // 
             // btnAgregar
             // 
@@ -198,7 +197,7 @@
             this.Controls.Add(this.lblDescrip);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblCodigo);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblCompletar);
             this.Controls.Add(this.dgvMostrar);
             this.Name = "frmAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -215,7 +214,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvMostrar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblCompletar;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblDescrip;

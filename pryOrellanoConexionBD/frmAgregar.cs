@@ -59,7 +59,7 @@ namespace pryOrellanoConexionBD
             {
                 clsProducto producto = new clsProducto();
                 clsConexion BBDD = new clsConexion();
-                //  producto.Codigo = Convert.ToInt32(numCodigo.Value);
+
                 producto.Nombre = txtNombre.Text;
                 producto.Descripcion = txtDescr.Text;
                 producto.Precio = Convert.ToInt32(numPrecio.Value);

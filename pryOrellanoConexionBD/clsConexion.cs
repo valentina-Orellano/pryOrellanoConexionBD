@@ -86,5 +86,31 @@ namespace pryOrellanoConexionBD
                 MessageBox.Show("Error al agregar producto: " + ex.Message);
             }
         }
+
+        public void Modificar(clsProducto producto)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(cadenaConexion))
+                {
+                    string query = "UPDATE Productos SET Nombre=@Nombre, Descripcion=@Descripcion, Precio=@Precio, " +
+                                   "Stock=@Stock, CategoriaId=@CategoriaId WHERE Codigo=@Codigo";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Codigo", producto.Codigo);
+                    cmd.Parameters.AddWithValue("@Nombre", producto.Nombre);
+                    cmd.Parameters.AddWithValue("@Descripcion", producto.Descripcion);
+                    cmd.Parameters.AddWithValue("@Precio", producto.Precio);
+                    cmd.Parameters.AddWithValue("@Stock", producto.Stock);
+                    cmd.Parameters.AddWithValue("@CategoriaId", producto.CategoriaId);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show($"No se pudo modificar el producto: {error.Message}");
+            }
+        }
+
     }
 }
