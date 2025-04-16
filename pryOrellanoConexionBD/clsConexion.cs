@@ -112,5 +112,23 @@ namespace pryOrellanoConexionBD
             }
         }
 
+        public void Eliminar(int codigo)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(cadenaConexion))
+                {
+                    string query = "DELETE FROM Productos WHERE Codigo = @Codigo";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@Codigo", codigo);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show($"No se pudo eliminar el producto: {error.Message}");
+            }
+        }
     }
 }
