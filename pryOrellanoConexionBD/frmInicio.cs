@@ -17,11 +17,35 @@ namespace pryOrellanoConexionBD
             InitializeComponent();
         }
 
-        clsConexion conexion = new clsConexion();
+        
         private void frmInicio_Load(object sender, EventArgs e)
         {
-            conexion.MostrarDatos(dgvMostrar);
+            
         }
 
+        private void verProuctosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProductos v = new frmProductos();
+            v.ShowDialog();
+        }
+
+
+        private void modificarProductoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmModificar v = new frmModificar();
+            v.ShowDialog();
+        }
+
+        private void eliminarProductoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmEliminar v = new frmEliminar();
+            v.ShowDialog();
+        }
+
+        private void agregarProductoToolStripMenuItem1_Click_1(object sender, EventArgs e)
+        {
+            frmAgregar v = new frmAgregar();
+            v.ShowDialog();
+        }
     }
 }
