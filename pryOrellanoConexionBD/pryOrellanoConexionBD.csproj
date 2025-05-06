@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsConexion.cs" />
+    <Compile Include="clsLogin.cs" />
     <Compile Include="clsProducto.cs" />
     <Compile Include="frmAgregar.cs">
       <SubType>Form</SubType>

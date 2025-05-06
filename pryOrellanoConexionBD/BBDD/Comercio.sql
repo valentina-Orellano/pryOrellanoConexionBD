@@ -15,6 +15,12 @@ CategoriaId INT,
 FOREIGN KEY (CategoriaId) REFERENCES Categorias(Id)
 );
 
+CREATE TABLE Usuarios (
+
+Usuario NVARCHAR(100),
+Contraseña NVARCHAR (50)
+);
+
 -- Insertar categorías
 INSERT INTO Categorias (Nombre) VALUES ('Tecnología'), ('Hogar'), ('Ropa');
 
