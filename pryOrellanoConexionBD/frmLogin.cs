@@ -28,7 +28,7 @@ namespace pryOrellanoConexionBD
             clsConexion conexion = new clsConexion();
             txtContraseña.PasswordChar = '*';
             this.KeyPreview = true;
-            //btnEntrar.Enabled = false;
+            btnEntrar.Enabled = false;
             btnRegistrarse.Enabled = false;
         }
 
@@ -72,6 +72,7 @@ namespace pryOrellanoConexionBD
                 Inicio.Usuario = txtUsuario.Text;
                 Inicio.Contraseña = txtContraseña.Text;
                 conexión.AgregarUsuario(Inicio);
+                MessageBox.Show("Usuario creado", "Proceso completo");
             }
             catch (Exception ex)
             {

@@ -53,34 +53,7 @@ namespace pryOrellanoConexionBD
             }
         }
 
-        private void btnAgregar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                clsProducto producto = new clsProducto();
-                clsConexion BBDD = new clsConexion();
-
-                producto.Nombre = txtNombre.Text;
-                producto.Descripcion = txtDescr.Text;
-                producto.Precio = Convert.ToInt32(numPrecio.Value);
-                producto.Stock = Convert.ToInt32(numStock.Value);
-                producto.CategoriaId = Convert.ToInt32(cmbCat.SelectedValue);
-
-                BBDD.Agregar(producto);
-                BBDD.CargarProductos(dgvMostrar);
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"No se agrego el producto" + ex.Message);
-            }
-            txtCodigo.Clear();
-            txtNombre.Clear();
-            txtDescr.Clear();
-            numPrecio.Value = 0;
-            numStock.Value = 0;
-            cmbCat.SelectedIndex = -1;
-        }
+ 
 
         private void cmbCat_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -120,6 +93,33 @@ namespace pryOrellanoConexionBD
             ValidarDatos();
         }
 
-       
+        private void btnAgregar_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                clsProducto producto = new clsProducto();
+                clsConexion BBDD = new clsConexion();
+
+                producto.Nombre = txtNombre.Text;
+                producto.Descripcion = txtDescr.Text;
+                producto.Precio = Convert.ToInt32(numPrecio.Value);
+                producto.Stock = Convert.ToInt32(numStock.Value);
+                producto.CategoriaId = Convert.ToInt32(cmbCat.SelectedValue);
+
+                BBDD.Agregar(producto);
+                BBDD.CargarProductos(dgvMostrar);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"No se agrego el producto" + ex.Message);
+            }
+            txtCodigo.Clear();
+            txtNombre.Clear();
+            txtDescr.Clear();
+            numPrecio.Value = 0;
+            numStock.Value = 0;
+            cmbCat.SelectedIndex = -1;
+        }
     }
 }

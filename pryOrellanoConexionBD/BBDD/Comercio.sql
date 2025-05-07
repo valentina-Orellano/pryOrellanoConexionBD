@@ -16,7 +16,7 @@ FOREIGN KEY (CategoriaId) REFERENCES Categorias(Id)
 );
 
 CREATE TABLE Usuarios (
-
+Id INT NOT NULL PRIMARY KEY IDENTITY,
 Usuario NVARCHAR(100),
 Contraseña NVARCHAR (50)
 );

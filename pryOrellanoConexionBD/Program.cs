@@ -16,7 +16,7 @@ namespace pryOrellanoConexionBD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmModificar());
+            Application.Run(new frmLogin());
         }
     }
 }

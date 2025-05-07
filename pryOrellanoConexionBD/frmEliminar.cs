@@ -36,7 +36,19 @@ namespace pryOrellanoConexionBD
             }
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        
+
+        private void numCodigo_ValueChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void dgvMostrar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -51,18 +63,6 @@ namespace pryOrellanoConexionBD
                 MessageBox.Show($"No se elimino el producto");
             }
             numCodigo.Value = 0;
-
-
-
-        }
-
-        private void numCodigo_ValueChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
-        private void dgvMostrar_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
         }
     }
