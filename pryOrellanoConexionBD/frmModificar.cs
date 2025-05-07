@@ -115,5 +115,25 @@ namespace pryOrellanoConexionBD
             cmbCat.SelectedIndex = -1;
 
         }
+
+        private void dgvMostrar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvMostrar_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvMostrar.Rows[e.RowIndex];
+                txtCodigo.Text = fila.Cells["Codigo"].Value.ToString();
+                txtNombre.Text = fila.Cells["Nombre"].Value.ToString();
+                txtDescr.Text = fila.Cells["Descripcion"].Value.ToString();
+                numPrecio.Value = Convert.ToDecimal(fila.Cells["Stock"].Value);
+                numStock.Value = Convert.ToInt32(fila.Cells["Stock"].Value);
+                cmbCat.SelectedValue = Convert.ToInt32(fila.Cells["CategoriaId"].Value);
+
+            }
+        }
     }
 }
