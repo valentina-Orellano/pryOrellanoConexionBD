@@ -51,10 +51,15 @@
             // 
             // dgvMostrar
             // 
+            this.dgvMostrar.AllowUserToAddRows = false;
+            this.dgvMostrar.AllowUserToDeleteRows = false;
+            this.dgvMostrar.AllowUserToResizeColumns = false;
+            this.dgvMostrar.AllowUserToResizeRows = false;
             this.dgvMostrar.BackgroundColor = System.Drawing.Color.Maroon;
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dgvMostrar.Location = new System.Drawing.Point(27, 210);
+            this.dgvMostrar.Location = new System.Drawing.Point(20, 171);
+            this.dgvMostrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvMostrar.MultiSelect = false;
             this.dgvMostrar.Name = "dgvMostrar";
             this.dgvMostrar.ReadOnly = true;
@@ -65,7 +70,7 @@
             this.dgvMostrar.ShowCellToolTips = false;
             this.dgvMostrar.ShowEditingIcon = false;
             this.dgvMostrar.ShowRowErrors = false;
-            this.dgvMostrar.Size = new System.Drawing.Size(914, 287);
+            this.dgvMostrar.Size = new System.Drawing.Size(686, 233);
             this.dgvMostrar.TabIndex = 0;
             // 
             // lblCompletar
@@ -74,9 +79,10 @@
             this.lblCompletar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCompletar.Font = new System.Drawing.Font("Bauhaus 93", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompletar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCompletar.Location = new System.Drawing.Point(146, 9);
+            this.lblCompletar.Location = new System.Drawing.Point(110, 7);
+            this.lblCompletar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompletar.Name = "lblCompletar";
-            this.lblCompletar.Size = new System.Drawing.Size(682, 32);
+            this.lblCompletar.Size = new System.Drawing.Size(539, 25);
             this.lblCompletar.TabIndex = 1;
             this.lblCompletar.Text = "Complete todos los campos para agregar un producto";
             // 
@@ -86,9 +92,10 @@
             this.lblCodigo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCodigo.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCodigo.Location = new System.Drawing.Point(69, 51);
+            this.lblCodigo.Location = new System.Drawing.Point(52, 41);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(65, 19);
+            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
             this.lblCodigo.TabIndex = 2;
             this.lblCodigo.Text = "Código";
             // 
@@ -98,9 +105,10 @@
             this.lblNombre.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNombre.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblNombre.Location = new System.Drawing.Point(69, 128);
+            this.lblNombre.Location = new System.Drawing.Point(52, 104);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(65, 19);
+            this.lblNombre.Size = new System.Drawing.Size(54, 16);
             this.lblNombre.TabIndex = 3;
             this.lblNombre.Text = "Nombre";
             // 
@@ -110,9 +118,10 @@
             this.lblDescrip.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblDescrip.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescrip.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblDescrip.Location = new System.Drawing.Point(307, 51);
+            this.lblDescrip.Location = new System.Drawing.Point(230, 41);
+            this.lblDescrip.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescrip.Name = "lblDescrip";
-            this.lblDescrip.Size = new System.Drawing.Size(99, 19);
+            this.lblDescrip.Size = new System.Drawing.Size(82, 16);
             this.lblDescrip.TabIndex = 4;
             this.lblDescrip.Text = "Descripción";
             // 
@@ -122,9 +131,10 @@
             this.lblPrecio.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblPrecio.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPrecio.Location = new System.Drawing.Point(307, 128);
+            this.lblPrecio.Location = new System.Drawing.Point(230, 104);
+            this.lblPrecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(57, 19);
+            this.lblPrecio.Size = new System.Drawing.Size(47, 16);
             this.lblPrecio.TabIndex = 5;
             this.lblPrecio.Text = "Precio";
             // 
@@ -134,9 +144,10 @@
             this.lblStock.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblStock.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStock.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStock.Location = new System.Drawing.Point(507, 51);
+            this.lblStock.Location = new System.Drawing.Point(380, 41);
+            this.lblStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(50, 19);
+            this.lblStock.Size = new System.Drawing.Size(42, 16);
             this.lblStock.TabIndex = 6;
             this.lblStock.Text = "Stock";
             // 
@@ -146,54 +157,60 @@
             this.lblCat.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCat.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCat.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCat.Location = new System.Drawing.Point(507, 128);
+            this.lblCat.Location = new System.Drawing.Point(380, 104);
+            this.lblCat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCat.Name = "lblCat";
-            this.lblCat.Size = new System.Drawing.Size(86, 19);
+            this.lblCat.Size = new System.Drawing.Size(71, 16);
             this.lblCat.TabIndex = 7;
             this.lblCat.Text = "Categoría";
             // 
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(73, 87);
+            this.txtCodigo.Location = new System.Drawing.Point(55, 71);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(129, 32);
+            this.txtCodigo.Size = new System.Drawing.Size(98, 27);
             this.txtCodigo.TabIndex = 8;
             this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(73, 162);
+            this.txtNombre.Location = new System.Drawing.Point(55, 132);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(174, 32);
+            this.txtNombre.Size = new System.Drawing.Size(132, 27);
             this.txtNombre.TabIndex = 9;
             this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtDescr
             // 
             this.txtDescr.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescr.Location = new System.Drawing.Point(310, 87);
+            this.txtDescr.Location = new System.Drawing.Point(232, 71);
+            this.txtDescr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescr.Name = "txtDescr";
-            this.txtDescr.Size = new System.Drawing.Size(172, 32);
+            this.txtDescr.Size = new System.Drawing.Size(130, 27);
             this.txtDescr.TabIndex = 10;
             this.txtDescr.TextChanged += new System.EventHandler(this.txtDescr_TextChanged);
             // 
             // numPrecio
             // 
             this.numPrecio.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPrecio.Location = new System.Drawing.Point(310, 162);
+            this.numPrecio.Location = new System.Drawing.Point(232, 132);
+            this.numPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numPrecio.Name = "numPrecio";
-            this.numPrecio.Size = new System.Drawing.Size(76, 32);
+            this.numPrecio.Size = new System.Drawing.Size(57, 27);
             this.numPrecio.TabIndex = 11;
             this.numPrecio.ValueChanged += new System.EventHandler(this.numPrecio_ValueChanged);
             // 
             // numStock
             // 
             this.numStock.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numStock.Location = new System.Drawing.Point(510, 87);
+            this.numStock.Location = new System.Drawing.Point(382, 71);
+            this.numStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numStock.Name = "numStock";
-            this.numStock.Size = new System.Drawing.Size(76, 32);
+            this.numStock.Size = new System.Drawing.Size(57, 27);
             this.numStock.TabIndex = 12;
             this.numStock.ValueChanged += new System.EventHandler(this.numStock_ValueChanged);
             // 
@@ -201,18 +218,20 @@
             // 
             this.cmbCat.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCat.FormattingEnabled = true;
-            this.cmbCat.Location = new System.Drawing.Point(510, 160);
+            this.cmbCat.Location = new System.Drawing.Point(382, 130);
+            this.cmbCat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCat.Name = "cmbCat";
-            this.cmbCat.Size = new System.Drawing.Size(157, 27);
+            this.cmbCat.Size = new System.Drawing.Size(119, 24);
             this.cmbCat.TabIndex = 13;
             // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAgregar.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(766, 100);
+            this.btnAgregar.Location = new System.Drawing.Point(574, 81);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(107, 44);
+            this.btnAgregar.Size = new System.Drawing.Size(80, 36);
             this.btnAgregar.TabIndex = 14;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -220,10 +239,10 @@
             // 
             // frmAgregar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(975, 524);
+            this.ClientSize = new System.Drawing.Size(731, 426);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.cmbCat);
             this.Controls.Add(this.numStock);
@@ -240,6 +259,7 @@
             this.Controls.Add(this.lblCompletar);
             this.Controls.Add(this.dgvMostrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmAgregar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Producto";

@@ -36,10 +36,15 @@
             // 
             // dgvMostrara
             // 
+            this.dgvMostrara.AllowUserToAddRows = false;
+            this.dgvMostrara.AllowUserToDeleteRows = false;
+            this.dgvMostrara.AllowUserToResizeColumns = false;
+            this.dgvMostrara.AllowUserToResizeRows = false;
             this.dgvMostrara.BackgroundColor = System.Drawing.Color.Maroon;
             this.dgvMostrara.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrara.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dgvMostrara.Location = new System.Drawing.Point(37, 73);
+            this.dgvMostrara.Location = new System.Drawing.Point(28, 59);
+            this.dgvMostrara.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvMostrara.MultiSelect = false;
             this.dgvMostrara.Name = "dgvMostrara";
             this.dgvMostrara.ReadOnly = true;
@@ -50,7 +55,7 @@
             this.dgvMostrara.ShowCellToolTips = false;
             this.dgvMostrara.ShowEditingIcon = false;
             this.dgvMostrara.ShowRowErrors = false;
-            this.dgvMostrara.Size = new System.Drawing.Size(967, 506);
+            this.dgvMostrara.Size = new System.Drawing.Size(725, 411);
             this.dgvMostrara.TabIndex = 0;
             // 
             // lblProductos
@@ -59,22 +64,24 @@
             this.lblProductos.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblProductos.Font = new System.Drawing.Font("Bauhaus 93", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProductos.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblProductos.Location = new System.Drawing.Point(389, 20);
+            this.lblProductos.Location = new System.Drawing.Point(292, 16);
+            this.lblProductos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProductos.Name = "lblProductos";
-            this.lblProductos.Size = new System.Drawing.Size(257, 32);
+            this.lblProductos.Size = new System.Drawing.Size(202, 25);
             this.lblProductos.TabIndex = 1;
             this.lblProductos.Text = "Todos los productos";
             // 
             // frmProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1032, 609);
+            this.ClientSize = new System.Drawing.Size(774, 495);
             this.Controls.Add(this.lblProductos);
             this.Controls.Add(this.dgvMostrara);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmProductos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Productos";

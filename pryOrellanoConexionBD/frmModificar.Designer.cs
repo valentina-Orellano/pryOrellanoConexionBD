@@ -55,7 +55,7 @@
             this.btnModificar.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnModificar.Location = new System.Drawing.Point(582, 89);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(80, 36);
             this.btnModificar.TabIndex = 29;
@@ -70,7 +70,7 @@
             this.cmbCat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cmbCat.FormattingEnabled = true;
             this.cmbCat.Location = new System.Drawing.Point(385, 135);
-            this.cmbCat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCat.Margin = new System.Windows.Forms.Padding(2);
             this.cmbCat.Name = "cmbCat";
             this.cmbCat.Size = new System.Drawing.Size(119, 24);
             this.cmbCat.TabIndex = 28;
@@ -82,7 +82,7 @@
             this.numStock.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numStock.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.numStock.Location = new System.Drawing.Point(385, 76);
-            this.numStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numStock.Margin = new System.Windows.Forms.Padding(2);
             this.numStock.Name = "numStock";
             this.numStock.Size = new System.Drawing.Size(57, 27);
             this.numStock.TabIndex = 27;
@@ -94,7 +94,7 @@
             this.numPrecio.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPrecio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.numPrecio.Location = new System.Drawing.Point(235, 136);
-            this.numPrecio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(57, 27);
             this.numPrecio.TabIndex = 26;
@@ -106,7 +106,7 @@
             this.txtDescr.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescr.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtDescr.Location = new System.Drawing.Point(235, 76);
-            this.txtDescr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescr.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescr.Name = "txtDescr";
             this.txtDescr.Size = new System.Drawing.Size(130, 27);
             this.txtDescr.TabIndex = 25;
@@ -118,7 +118,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtNombre.Location = new System.Drawing.Point(57, 136);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(132, 27);
             this.txtNombre.TabIndex = 24;
@@ -130,7 +130,7 @@
             this.txtCodigo.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCodigo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtCodigo.Location = new System.Drawing.Point(57, 76);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(98, 27);
             this.txtCodigo.TabIndex = 23;
@@ -220,20 +220,24 @@
             this.lblCompletar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCompletar.Font = new System.Drawing.Font("Bauhaus 93", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompletar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCompletar.Location = new System.Drawing.Point(106, 7);
+            this.lblCompletar.Location = new System.Drawing.Point(166, 9);
             this.lblCompletar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompletar.Name = "lblCompletar";
-            this.lblCompletar.Size = new System.Drawing.Size(555, 25);
+            this.lblCompletar.Size = new System.Drawing.Size(421, 25);
             this.lblCompletar.TabIndex = 16;
-            this.lblCompletar.Text = "Complete todos los campos para modificar un producto";
+            this.lblCompletar.Text = "Haga doble click para editar un producto";
             // 
             // dgvMostrar
             // 
+            this.dgvMostrar.AllowUserToAddRows = false;
+            this.dgvMostrar.AllowUserToDeleteRows = false;
+            this.dgvMostrar.AllowUserToResizeColumns = false;
+            this.dgvMostrar.AllowUserToResizeRows = false;
             this.dgvMostrar.BackgroundColor = System.Drawing.Color.Maroon;
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dgvMostrar.Location = new System.Drawing.Point(22, 176);
-            this.dgvMostrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvMostrar.Margin = new System.Windows.Forms.Padding(2);
             this.dgvMostrar.MultiSelect = false;
             this.dgvMostrar.Name = "dgvMostrar";
             this.dgvMostrar.ReadOnly = true;
@@ -271,7 +275,7 @@
             this.Controls.Add(this.lblCompletar);
             this.Controls.Add(this.dgvMostrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmModificar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar";

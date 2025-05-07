@@ -41,10 +41,10 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(470, 142);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Location = new System.Drawing.Point(352, 115);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(92, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(69, 28);
             this.btnEliminar.TabIndex = 28;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
@@ -52,11 +52,15 @@
             // 
             // dgvMostrar
             // 
+            this.dgvMostrar.AllowUserToAddRows = false;
+            this.dgvMostrar.AllowUserToDeleteRows = false;
+            this.dgvMostrar.AllowUserToResizeColumns = false;
+            this.dgvMostrar.AllowUserToResizeRows = false;
             this.dgvMostrar.BackgroundColor = System.Drawing.Color.Maroon;
             this.dgvMostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dgvMostrar.Location = new System.Drawing.Point(94, 210);
-            this.dgvMostrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMostrar.Location = new System.Drawing.Point(70, 171);
+            this.dgvMostrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvMostrar.MultiSelect = false;
             this.dgvMostrar.Name = "dgvMostrar";
             this.dgvMostrar.ReadOnly = true;
@@ -67,7 +71,7 @@
             this.dgvMostrar.ShowCellToolTips = false;
             this.dgvMostrar.ShowEditingIcon = false;
             this.dgvMostrar.ShowRowErrors = false;
-            this.dgvMostrar.Size = new System.Drawing.Size(855, 310);
+            this.dgvMostrar.Size = new System.Drawing.Size(641, 252);
             this.dgvMostrar.TabIndex = 27;
             this.dgvMostrar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMostrar_CellContentClick);
             // 
@@ -77,9 +81,10 @@
             this.lblCodigo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCodigo.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCodigo.Location = new System.Drawing.Point(421, 93);
+            this.lblCodigo.Location = new System.Drawing.Point(316, 76);
+            this.lblCodigo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(65, 19);
+            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
             this.lblCodigo.TabIndex = 25;
             this.lblCodigo.Text = "Código";
             // 
@@ -89,33 +94,36 @@
             this.lblCompletar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCompletar.Font = new System.Drawing.Font("Bauhaus 93", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompletar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCompletar.Location = new System.Drawing.Point(183, 24);
+            this.lblCompletar.Location = new System.Drawing.Point(137, 20);
+            this.lblCompletar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompletar.Name = "lblCompletar";
-            this.lblCompletar.Size = new System.Drawing.Size(648, 32);
+            this.lblCompletar.Size = new System.Drawing.Size(506, 25);
             this.lblCompletar.TabIndex = 29;
             this.lblCompletar.Text = "Seleccione el código de la fila que quiere eliminar";
             // 
             // numCodigo
             // 
             this.numCodigo.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numCodigo.Location = new System.Drawing.Point(514, 91);
+            this.numCodigo.Location = new System.Drawing.Point(386, 74);
+            this.numCodigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numCodigo.Name = "numCodigo";
-            this.numCodigo.Size = new System.Drawing.Size(120, 32);
+            this.numCodigo.Size = new System.Drawing.Size(90, 27);
             this.numCodigo.TabIndex = 30;
             this.numCodigo.ValueChanged += new System.EventHandler(this.numCodigo_ValueChanged);
             // 
             // frmEliminar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1041, 564);
+            this.ClientSize = new System.Drawing.Size(781, 458);
             this.Controls.Add(this.numCodigo);
             this.Controls.Add(this.lblCompletar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.dgvMostrar);
             this.Controls.Add(this.lblCodigo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmEliminar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Producto";
