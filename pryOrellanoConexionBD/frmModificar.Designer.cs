@@ -220,12 +220,12 @@
             this.lblCompletar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblCompletar.Font = new System.Drawing.Font("Bauhaus 93", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCompletar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCompletar.Location = new System.Drawing.Point(166, 9);
+            this.lblCompletar.Location = new System.Drawing.Point(143, 9);
             this.lblCompletar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCompletar.Name = "lblCompletar";
-            this.lblCompletar.Size = new System.Drawing.Size(421, 25);
+            this.lblCompletar.Size = new System.Drawing.Size(469, 25);
             this.lblCompletar.TabIndex = 16;
-            this.lblCompletar.Text = "Haga doble click para editar un producto";
+            this.lblCompletar.Text = "Haga doble click en un producto para editarlo";
             // 
             // dgvMostrar
             // 
