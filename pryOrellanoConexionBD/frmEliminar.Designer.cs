@@ -56,11 +56,19 @@
             this.dgvMostrar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dgvMostrar.Location = new System.Drawing.Point(94, 210);
             this.dgvMostrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvMostrar.MultiSelect = false;
             this.dgvMostrar.Name = "dgvMostrar";
+            this.dgvMostrar.ReadOnly = true;
+            this.dgvMostrar.RowHeadersVisible = false;
             this.dgvMostrar.RowHeadersWidth = 62;
             this.dgvMostrar.RowTemplate.Height = 28;
+            this.dgvMostrar.ShowCellErrors = false;
+            this.dgvMostrar.ShowCellToolTips = false;
+            this.dgvMostrar.ShowEditingIcon = false;
+            this.dgvMostrar.ShowRowErrors = false;
             this.dgvMostrar.Size = new System.Drawing.Size(855, 310);
             this.dgvMostrar.TabIndex = 27;
+            this.dgvMostrar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMostrar_CellContentClick);
             // 
             // lblCodigo
             // 

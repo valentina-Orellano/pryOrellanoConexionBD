@@ -60,5 +60,10 @@ namespace pryOrellanoConexionBD
         {
             ValidarDatos();
         }
+
+        private void dgvMostrar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

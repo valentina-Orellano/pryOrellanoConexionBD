@@ -40,9 +40,16 @@
             this.dgvMostrara.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMostrara.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dgvMostrara.Location = new System.Drawing.Point(37, 73);
+            this.dgvMostrara.MultiSelect = false;
             this.dgvMostrara.Name = "dgvMostrara";
+            this.dgvMostrara.ReadOnly = true;
+            this.dgvMostrara.RowHeadersVisible = false;
             this.dgvMostrara.RowHeadersWidth = 51;
             this.dgvMostrara.RowTemplate.Height = 24;
+            this.dgvMostrara.ShowCellErrors = false;
+            this.dgvMostrara.ShowCellToolTips = false;
+            this.dgvMostrara.ShowEditingIcon = false;
+            this.dgvMostrara.ShowRowErrors = false;
             this.dgvMostrara.Size = new System.Drawing.Size(967, 506);
             this.dgvMostrara.TabIndex = 0;
             // 
