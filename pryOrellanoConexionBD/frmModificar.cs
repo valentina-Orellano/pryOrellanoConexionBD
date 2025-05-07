@@ -49,8 +49,44 @@ namespace pryOrellanoConexionBD
                 btnModificar.Enabled = false;
             }
         }
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void txtDescr_TextChanged_1(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void numStock_ValueChanged_1(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void txtNombre_TextChanged_1(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void numPrecio_ValueChanged_1(object sender, EventArgs e)
+        {
+            ValidarDatos();
+        }
+
+        private void cmbCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCat.SelectedIndex != -1)
+            {
+                btnModificar.Enabled = true;
+            }
+            else
+            {
+                btnModificar.Enabled = false;
+            }
+        }
+
+        private void btnModificar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -78,45 +114,6 @@ namespace pryOrellanoConexionBD
             numStock.Value = 0;
             cmbCat.SelectedIndex = -1;
 
-
-
-        }
-
-        private void numCodigo_ValueChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
-        private void txtDescr_TextChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
-        private void numPrecio_ValueChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
-        private void numStock_ValueChanged(object sender, EventArgs e)
-        {
-            ValidarDatos();
-        }
-
-        private void cmbCategorias_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbCat.SelectedIndex != -1)
-            {
-                btnModificar.Enabled = true;
-            }
-            else
-            {
-                btnModificar.Enabled = false;
-            }
         }
     }
 }

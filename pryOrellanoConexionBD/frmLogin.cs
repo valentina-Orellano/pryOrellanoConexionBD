@@ -28,7 +28,7 @@ namespace pryOrellanoConexionBD
             clsConexion conexion = new clsConexion();
             txtContraseña.PasswordChar = '*';
             this.KeyPreview = true;
-            btnEntrar.Enabled = false;
+            //btnEntrar.Enabled = false;
             btnRegistrarse.Enabled = false;
         }
 
@@ -103,6 +103,11 @@ namespace pryOrellanoConexionBD
         private void txtContraseña_TextChanged(object sender, EventArgs e)
         {
             ValidarDatos();
+        }
+
+        private void gbLogin_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

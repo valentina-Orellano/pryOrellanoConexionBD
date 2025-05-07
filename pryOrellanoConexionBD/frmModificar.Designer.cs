@@ -54,12 +54,13 @@
             this.btnModificar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnModificar.Font = new System.Drawing.Font("Bauhaus 93", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnModificar.Location = new System.Drawing.Point(769, 106);
+            this.btnModificar.Location = new System.Drawing.Point(776, 109);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(107, 44);
             this.btnModificar.TabIndex = 29;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
             // cmbCat
             // 
@@ -71,6 +72,7 @@
             this.cmbCat.Name = "cmbCat";
             this.cmbCat.Size = new System.Drawing.Size(157, 27);
             this.cmbCat.TabIndex = 28;
+            this.cmbCat.SelectedIndexChanged += new System.EventHandler(this.cmbCat_SelectedIndexChanged);
             // 
             // numStock
             // 
@@ -81,6 +83,7 @@
             this.numStock.Name = "numStock";
             this.numStock.Size = new System.Drawing.Size(76, 32);
             this.numStock.TabIndex = 27;
+            this.numStock.ValueChanged += new System.EventHandler(this.numStock_ValueChanged_1);
             // 
             // numPrecio
             // 
@@ -91,6 +94,7 @@
             this.numPrecio.Name = "numPrecio";
             this.numPrecio.Size = new System.Drawing.Size(76, 32);
             this.numPrecio.TabIndex = 26;
+            this.numPrecio.ValueChanged += new System.EventHandler(this.numPrecio_ValueChanged_1);
             // 
             // txtDescr
             // 
@@ -101,6 +105,7 @@
             this.txtDescr.Name = "txtDescr";
             this.txtDescr.Size = new System.Drawing.Size(172, 32);
             this.txtDescr.TabIndex = 25;
+            this.txtDescr.TextChanged += new System.EventHandler(this.txtDescr_TextChanged_1);
             // 
             // txtNombre
             // 
@@ -111,6 +116,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(174, 32);
             this.txtNombre.TabIndex = 24;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged_1);
             // 
             // txtCodigo
             // 
@@ -121,6 +127,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(129, 32);
             this.txtCodigo.TabIndex = 23;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // lblCat
             // 

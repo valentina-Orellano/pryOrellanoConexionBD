@@ -58,6 +58,7 @@
             this.gbLogin.TabIndex = 0;
             this.gbLogin.TabStop = false;
             this.gbLogin.Text = "Login";
+            this.gbLogin.Enter += new System.EventHandler(this.gbLogin_Enter);
             // 
             // lblNombre
             // 
